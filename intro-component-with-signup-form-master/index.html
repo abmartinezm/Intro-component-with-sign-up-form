@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">
+      Learn to code by watching others
+    </h1>
+    <p class="desc">
+      See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+    but understanding how developers think is invaluable.
+    </p>
+
+    <button class="btn"> <span>Try it free 7 days</span> then <br> $20/mo. thereafter</button>
+
+    <form action="" class="form">
+      <ul>
+        <li> 
+          <!-- pattern="[a-zA-Z]{5,}" title="Minimum 5 letters" -->
+          <input class="input"   type="text " id="name" autocomplete="off"  placeholder="First Name" ><img id="error-name" src="images/icon-error.svg" alt="">
+            <p id="error-txt-name" >First Name cannot be empty</p>
+          <!-- id="nameField" required -->
+        </li>
+        <li>
+          <input class="input"  type="text"  id="last-name" placeholder="Last Name"><img id="error-lst-name" src="images/icon-error.svg" alt="">
+            <p id="error-txt-lst-name" >Last Name cannot be empty</p>
+        </li>
+        <li>
+          <input class="input"  type="email" id="mail" placeholder="Email Address"><img id="error-mail" src="images/icon-error.svg" alt="">
+            <p id="error-txt" >Looks like this is not an email</p>
+        </li>
+        <li class="lst-child">
+          <input class="input"   type="password" id="pass" placeholder="Password" maxlength="15"><img id="error-pass" src="images/icon-error.svg" alt="">
+            <p id="error-txt-pass" >Password cannot be empty</p>
+        </li>
+        <li class="lst-btn">
+          <button class="btn-trial" id="btn-trial">Claim your free trial</button>
+        </li>
+        <li>
+          <p>By clicking the button, you are agreeing to our <a class="terms" href="#">Terms and Services</a> </p>  
+        </li>
+      </ul>
+    </form>
+  </div>
+
+  
+
+   
+
+  
+
+  
+   
+  
+  
+
+   
+
+  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Abraham Martinez Marquez</a>.
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
